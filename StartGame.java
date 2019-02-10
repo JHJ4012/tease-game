@@ -16,13 +16,13 @@ public class StartGame extends JFrame implements ActionListener{
 	 * 게임 시작 장면
 	 */
 	
-	ImageIcon foricon9_1 = new ImageIcon("D:\\그림\\시작버튼.png");
+	ImageIcon foricon9_1 = new ImageIcon("src/TeasePicture/StartButton.png");
 	Image foricon9_2 = 
 			foricon9_1.getImage().getScaledInstance(300,100 , Image.SCALE_SMOOTH);
 	ImageIcon icon9 = new ImageIcon(foricon9_2);
 	//시작 버튼 이미지 생성.
 	
-	Image icon8=new ImageIcon("D:\\그림\\시작장면.jpg").getImage();	//시작 배경화면 생성.
+	Image icon8=new ImageIcon("src/TeasePicture/StartScreen.jpg").getImage();	//시작 배경화면 생성.
 	
 	private static final long serialVersionUID = 1L;
 	

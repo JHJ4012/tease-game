@@ -45,13 +45,13 @@ public class TeaseTeacher extends JFrame{
 	static int i = 3;		//사진이 순서대로 돌아가기 위해 필요한 변수.
 
 	
-	ImageIcon foricon1_1 = new ImageIcon("D:\\그림\\기본1.png");
-	ImageIcon foricon2_1 = new ImageIcon("D:\\그림\\기본2.png");
-	ImageIcon foricon3_1 = new ImageIcon("D:\\그림\\놀리기1.png");
-	ImageIcon foricon4_1 = new ImageIcon("D:\\그림\\예비신호.png");
-	ImageIcon foricon5_1 = new ImageIcon("D:\\그림\\돌아보기1.png");
-	ImageIcon foricon6_1 = new ImageIcon("D:\\그림\\걸림.png");
-	ImageIcon foricon7_1 = new ImageIcon("D:\\그림\\걸리기.png");
+	ImageIcon foricon1_1 = new ImageIcon("src/TeasePicture/Default1.png");
+	ImageIcon foricon2_1 = new ImageIcon("src/TeasePicture/Default2.png");
+	ImageIcon foricon3_1 = new ImageIcon("src/TeasePicture/Tease.png");
+	ImageIcon foricon4_1 = new ImageIcon("src/TeasePicture/Warning.png");
+	ImageIcon foricon5_1 = new ImageIcon("src/TeasePicture/LookBack.png");
+	ImageIcon foricon6_1 = new ImageIcon("src/TeasePicture/getCaught.png");
+	ImageIcon foricon7_1 = new ImageIcon("src/TeasePicture/getCaught2.png");
 	
 	Image foricon1_2 = foricon1_1.getImage().getScaledInstance(500,400 , Image.SCALE_SMOOTH);
 	Image foricon2_2 = foricon2_1.getImage().getScaledInstance(500,400 , Image.SCALE_SMOOTH);
@@ -184,7 +184,7 @@ public class TeaseTeacher extends JFrame{
 		public void music() {
      	   try { 
      		   AudioInputStream stream = 
-     				   AudioSystem.getAudioInputStream(new File("D:\\음악\\bgm.wav")); 
+     				   AudioSystem.getAudioInputStream(new File("src/TeaseMusic/bgm.wav")); 
      		   clip = AudioSystem.getClip(); 
      		   clip.open( stream ); 
      		   clip.start();    
@@ -196,7 +196,7 @@ public class TeaseTeacher extends JFrame{
 		public void music2() {
 	 	   try { 
 	 		   AudioInputStream stream = 
-	 				   AudioSystem.getAudioInputStream(new File("D:\\음악\\bgm2.wav")); 
+	 				   AudioSystem.getAudioInputStream(new File("src/TeaseMusic/bgm2.wav")); 
 	 		   clip2 = AudioSystem.getClip(); 
 	 		   clip2.open( stream ); 
 	 		   clip2.start(); 	 		   
